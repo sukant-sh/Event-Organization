@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fest Name 2027 | Annual college fest</title>
+  <meta name="description" content="Three days of tech, culture, and sports. Register for Fest Name 2027.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="home.html" class="logo">Fest<span>Name</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="home.html" class="active">Home</a>
+        <a href="event.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html" class="btn btn-sun">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="hero-meta">15 to 17 February 2027 | Your College Name, City</p>
+        <h1>Fest Name 2027</h1>
+        <p class="hero-tag">Three days of hackathons, dance battles, robo races, and live music. Come compete, or just come for the night shows.</p>
+
+        <div class="countdown" id="countdown" aria-label="Time left until the fest starts">
+          <div class="cd-box"><strong id="cd-days">00</strong><span>Days</span></div>
+          <div class="cd-box"><strong id="cd-hours">00</strong><span>Hours</span></div>
+          <div class="cd-box"><strong id="cd-mins">00</strong><span>Minutes</span></div>
+          <div class="cd-box"><strong id="cd-secs">00</strong><span>Seconds</span></div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="register.html" class="btn btn-sun">Register now</a>
+          <a href="events.html" class="btn btn-line">See all events</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Fest highlights">
+      <div class="wrap">
+        <div><strong>30+</strong><span>Events</span></div>
+        <div><strong>5,000</strong><span>Students</span></div>
+        <div><strong>3</strong><span>Days</span></div>
+        <div><strong>₹2 lakh</strong><span>In prizes</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Guests and performers</h2>
+        <p class="section-sub">Meet the people lighting up the stage this year.</p>
+        <div class="guests">
+          <article class="guest">
+            <div class="guest-photo" aria-hidden="true">A</div>
+            <div class="guest-info"><h3>Guest name</h3><p>Chief guest, Day 1</p></div>
+          </article>
+          <article class="guest">
+            <div class="guest-photo" aria-hidden="true">B</div>
+            <div class="guest-info"><h3>Artist name</h3><p>Live concert, Day 2</p></div>
+          </article>
+          <article class="guest">
+            <div class="guest-photo" aria-hidden="true">C</div>
+            <div class="guest-info"><h3>DJ name</h3><p>DJ night, Day 3</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sponsors-band">
+      <div class="wrap">
+        <h2>Our sponsors</h2>
+        <p class="section-sub">Thank you to the brands that make the fest possible.</p>
+        <div class="sponsors">
+          <div class="sponsor">Logo</div>
+          <div class="sponsor">Logo</div>
+          <div class="sponsor">Logo</div>
+          <div class="sponsor">Logo</div>
+        </div>
+        <p class="sponsor-cta">Want your brand here? <a href="register.html#sponsor">Become a sponsor</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <h3>Fest Name 2027</h3>
+        <p>Your College Name, City, State</p>
+        <p>fest@yourcollege.edu</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://instagram.com/">Instagram</a>
+        <a href="https://wa.me/910000000000">WhatsApp</a>
+        <a href="register.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Change this date and time to your fest start (YYYY-MM-DDTHH:MM:SS)
+    var festStart = new Date("2027-02-15T09:00:00").getTime();
+
+    function pad(n) { return String(n).padStart(2, "0"); }
+
+    function tick() {
+      var diff = Math.max(0, festStart - Date.now());
+      document.getElementById("cd-days").textContent = pad(Math.floor(diff / 86400000));
+      document.getElementById("cd-hours").textContent = pad(Math.floor(diff / 3600000) % 24);
+      document.getElementById("cd-mins").textContent = pad(Math.floor(diff / 60000) % 60);
+      document.getElementById("cd-secs").textContent = pad(Math.floor(diff / 1000) % 60);
+    }
+
+    tick();
+    setInterval(tick, 1000);
+  </script>
+</body>
+</html>
