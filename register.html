@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | Fest Name 2027</title>
+  <meta name="description" content="Register for events at Fest Name 2027 or get in touch with the organizing team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="home.html" class="logo">Fest<span>Name</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="home.html">Home</a>
+        <a href="event.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html" class="btn btn-sun">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <h1>Register and contact</h1>
+        <p>Fill the form to register for an event. For team events, one member registers for the whole team.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="reg-layout">
+
+          <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io), or use a Google Form instead -->
+          <form class="form-card" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <h2>Registration form</h2>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Riya Sharma" required>
+              </div>
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="9876543210" pattern="[0-9]{10}" required>
+              </div>
+              <div class="field full">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@college.edu" required>
+              </div>
+              <div class="field full">
+                <label for="college">College name</label>
+                <input type="text" id="college" name="college" placeholder="Your college and city" required>
+              </div>
+              <div class="field">
+                <label for="branch">Branch</label>
+                <input type="text" id="branch" name="branch" placeholder="Computer Engineering" required>
+              </div>
+              <div class="field">
+                <label for="year">Year</label>
+                <select id="year" name="year" required>
+                  <option value="">Select year</option>
+                  <option>1st year</option>
+                  <option>2nd year</option>
+                  <option>3rd year</option>
+                  <option>4th year</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="event">Event</label>
+                <select id="event" name="event" required>
+                  <option value="">Select an event</option>
+                  <option value="hackathon">24-hour Hackathon</option>
+                  <option value="robo-race">Robo race</option>
+                  <option value="dance-battle">Dance battle</option>
+                  <option value="singing">Singing contest</option>
+                  <option value="box-cricket">Box cricket</option>
+                  <option value="gaming-arena">Gaming arena</option>
+                  <option value="ai-workshop">AI and machine learning workshop</option>
+                  <option value="photography">Photography workshop</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="team">Team members</label>
+                <textarea id="team" name="team" rows="3" placeholder="Names of your teammates. Leave blank for solo events."></textarea>
+                <small>Only for team events.</small>
+              </div>
+              <div class="field full">
+                <label for="txn">UPI transaction ID</label>
+                <input type="text" id="txn" name="transaction_id" placeholder="Enter after you pay the fee" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-sun">Submit registration</button>
+          </form>
+
+          <aside>
+            <div class="side-card">
+              <h3>How to pay</h3>
+              <p>Pay the event fee by UPI, then enter the transaction ID in the form.</p>
+              <span class="upi">UPI ID: yourfest@upi</span>
+            </div>
+
+            <div class="side-card">
+              <h3>Coordinators</h3>
+              <ul>
+                <li><strong>Name, Technical events</strong>98xxx xxxxx</li>
+                <li><strong>Name, Cultural events</strong>98xxx xxxxx</li>
+                <li><strong>Name, Sports and workshops</strong>98xxx xxxxx</li>
+              </ul>
+            </div>
+
+            <div class="side-card">
+              <h3>Find us</h3>
+              <p>Your College Name, Street, City, State</p>
+              <p>fest@yourcollege.edu</p>
+              <div class="links-row">
+                <a href="https://wa.me/910000000000">WhatsApp</a>
+                <a href="https://instagram.com/">Instagram</a>
+                <a href="https://maps.google.com/">Google Maps</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div id="sponsor">
+          <form class="form-card" action="https://formspree.io/f/YOUR_SPONSOR_FORM_ID" method="POST">
+            <h2>Become a sponsor</h2>
+            <div class="form-grid">
+              <div class="field">
+                <label for="s-company">Company name</label>
+                <input type="text" id="s-company" name="company" required>
+              </div>
+              <div class="field">
+                <label for="s-person">Contact person</label>
+                <input type="text" id="s-person" name="contact_person" required>
+              </div>
+              <div class="field">
+                <label for="s-email">Email</label>
+                <input type="email" id="s-email" name="email" required>
+              </div>
+              <div class="field">
+                <label for="s-phone">Phone number</label>
+                <input type="tel" id="s-phone" name="phone" required>
+              </div>
+              <div class="field full">
+                <label for="s-msg">Message</label>
+                <textarea id="s-msg" name="message" rows="3" placeholder="Tell us how you would like to partner with us."></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-sun">Send sponsor request</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <h3>Fest Name 2027</h3>
+        <p>Your College Name, City, State</p>
+        <p>fest@yourcollege.edu</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://instagram.com/">Instagram</a>
+        <a href="https://wa.me/910000000000">WhatsApp</a>
+        <a href="register.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Pre-select the event when coming from the Events or Schedule page (register.html?event=hackathon)
+    var picked = new URLSearchParams(window.location.search).get("event");
+    if (picked) {
+      document.getElementById("event").value = picked;
+    }
+  </script>
+</body>
+</html>

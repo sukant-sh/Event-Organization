@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events | Fest Name 2027</title>
+  <meta name="description" content="Browse all technical, cultural, sports, and workshop events at Fest Name 2027.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="event.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="home.html" class="logo">Fest<span>Name</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="home.html">Home</a>
+        <a href="event.html" class="active">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html" class="btn btn-sun">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <h1>All events</h1>
+        <p>Pick your category, check the rules, and register. Team events need one registration per team.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+
+        <div class="filters" role="group" aria-label="Filter events by category">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="technical">Technical</button>
+          <button class="filter" data-filter="cultural">Cultural</button>
+          <button class="filter" data-filter="sports">Sports</button>
+          <button class="filter" data-filter="workshops">Workshops</button>
+        </div>
+
+        <div class="events-grid">
+
+          <article class="event-card" data-category="technical">
+            <div class="poster technical">Hackathon</div>
+            <div class="event-body">
+              <h3>24-hour Hackathon</h3>
+              <ul class="event-facts">
+                <li><strong>Date:</strong> 15 Feb, 10:30 AM</li>
+                <li><strong>Venue:</strong> Computer lab 2</li>
+                <li><strong>Team:</strong> 3 to 4 members</li>
+                <li><strong>Prize:</strong> ₹50,000</li>
+                <li><strong>Fee:</strong> ₹200 per team</li>
+              </ul>
+              <details>
+                <summary>Rules and contact</summary>
+                <ul>
+                  <li>Bring your own laptop.</li>
+                  <li>Pre-built projects are not allowed.</li>
+                  <li>Coordinator: Name, 98xxx xxxxx</li>
+                </ul>
+              </details>
+              <a href="register.html?event=hackathon" class="btn btn-ink">Register</a>
+            </div>
+          </article>
+
+          <article class="event-card" data-category="technical">
+            <div class="poster technical">Robo race</div>
+            <div class="event-body">
+              <h3>Robo race</h3>
+              <ul class="event-facts">
+                <li><strong>Date:</strong> 16 Feb, 11:00 AM</li>
+                <li><strong>Venue:</strong> Workshop ground</li>
+                <li><strong>Team:</strong> 2 to 3 members</li>
+                <li><strong>Prize:</strong> ₹25,000</li>
+                <li><strong>Fee:</strong> ₹300 per team</li>
+              </ul>
+              <details>
+                <summary>Rules and contact</summary>
+                <ul>
+                  <li>Bot size limit: 30 cm x 30 cm.</li>
+                  <li>Wired or wireless bots are allowed.</li>
+                  <li>Coordinator: Name, 98xxx xxxxx</li>
+                </ul>
+              </details>
+              <a href="register.html?event=robo-race" class="btn btn-ink">Register</a>
+            </div>
+          </article>
+
+          <article class="event-card" data-category="cultural">
+            <div class="poster cultural">Dance battle</div>
+            <div class="event-body">
+              <h3>Dance battle</h3>
+              <ul class="event-facts">
+                <li><strong>Date:</strong> 15 Feb, 1:00 PM</li>
+                <li><strong>Venue:</strong> Open stage</li>
+                <li><strong>Team:</strong> Solo or group of up to 8</li>
+                <li><strong>Prize:</strong> ₹30,000</li>
+                <li><strong>Fee:</strong> ₹100 per entry</li>
+              </ul>
+              <details>
+                <summary>Rules and contact</summary>
+                <ul>
+                  <li>Time limit: 5 minutes per act.</li>
+                  <li>Send your music file before the event.</li>
+                  <li>Coordinator: Name, 98xxx xxxxx</li>
+                </ul>
+              </details>
+              <a href="register.html?event=dance-battle" class="btn btn-ink">Register</a>
+            </div>
+          </article>
+
+          <article class="event-card" data-category="cultural">
+            <div class="poster cultural">Singing</div>
+            <div class="event-body">
+              <h3>Singing contest</h3>
+              <ul class="event-facts">
+                <li><strong>Date:</strong> 16 Feb, 4:00 PM</li>
+                <li><strong>Venue:</strong> Main auditorium</li>
+                <li><strong>Team:</strong> Solo</li>
+                <li><strong>Prize:</strong> ₹15,000</li>
+                <li><strong>Fee:</strong> ₹50 per entry</li>
+              </ul>
+              <details>
+                <summary>Rules and contact</summary>
+                <ul>
+                  <li>Time limit: 4 minutes per song.</li>
+                  <li>Karaoke tracks and live instruments are allowed.</li>
+                  <li>Coordinator: Name, 98xxx xxxxx</li>
+                </ul>
+              </details>
+              <a href="register.html?event=singing" class="btn btn-ink">Register</a>
+            </div>
+          </article>
+
+          <article class="event-card" data-category="sports">
+            <div class="poster sports">Cricket</div>
+            <div class="event-body">
+              <h3>Box cricket</h3>
+              <ul class="event-facts">
+                <li><strong>Date:</strong> 16 Feb, 8:00 AM</li>
+                <li><strong>Venue:</strong> College ground</li>
+                <li><strong>Team:</strong> 6 players plus 2 subs</li>
+                <li><strong>Prize:</strong> ₹20,000</li>
+                <li><strong>Fee:</strong> ₹500 per team</li>
+              </ul>
+              <details>
+                <summary>Rules and contact</summary>
+                <ul>
+                  <li>5 overs per innings.</li>
+                  <li>Carry your college ID card.</li>
+                  <li>Coordinator: Name, 98xxx xxxxx</li>
+                </ul>
+              </details>
+              <a href="register.html?event=box-cricket" class="btn btn-ink">Register</a>
+            </div>
+          </article>
+
+          <article class="event-card" data-category="sports">
+            <div class="poster sports">Gaming arena</div>
+            <div class="event-body">
+              <h3>Gaming arena</h3>
+              <ul class="event-facts">
+                <li><strong>Date:</strong> 17 Feb, 11:00 AM</li>
+                <li><strong>Venue:</strong> Seminar hall</li>
+                <li><strong>Team:</strong> Solo or squad of 4</li>
+                <li><strong>Prize:</strong> ₹20,000</li>
+                <li><strong>Fee:</strong> ₹100 per player</li>
+              </ul>
+              <details>
+                <summary>Rules and contact</summary>
+                <ul>
+                  <li>Bring your own mobile or controller.</li>
+                  <li>Game list will be shared after registration.</li>
+                  <li>Coordinator: Name, 98xxx xxxxx</li>
+                </ul>
+              </details>
+              <a href="register.html?event=gaming-arena" class="btn btn-ink">Register</a>
+            </div>
+          </article>
+
+          <article class="event-card" data-category="workshops">
+            <div class="poster workshops">AI workshop</div>
+            <div class="event-body">
+              <h3>AI and machine learning workshop</h3>
+              <ul class="event-facts">
+                <li><strong>Date:</strong> 15 Feb, 11:00 AM</li>
+                <li><strong>Venue:</strong> Seminar hall</li>
+                <li><strong>Seats:</strong> 80</li>
+                <li><strong>Certificate:</strong> Yes</li>
+                <li><strong>Fee:</strong> ₹150 per person</li>
+              </ul>
+              <details>
+                <summary>Details and contact</summary>
+                <ul>
+                  <li>Beginners are welcome.</li>
+                  <li>Bring a laptop with Python installed.</li>
+                  <li>Coordinator: Name, 98xxx xxxxx</li>
+                </ul>
+              </details>
+              <a href="register.html?event=ai-workshop" class="btn btn-ink">Register</a>
+            </div>
+          </article>
+
+          <article class="event-card" data-category="workshops">
+            <div class="poster workshops">Photography</div>
+            <div class="event-body">
+              <h3>Photography workshop</h3>
+              <ul class="event-facts">
+                <li><strong>Date:</strong> 17 Feb, 10:00 AM</li>
+                <li><strong>Venue:</strong> Art block</li>
+                <li><strong>Seats:</strong> 40</li>
+                <li><strong>Certificate:</strong> Yes</li>
+                <li><strong>Fee:</strong> ₹100 per person</li>
+              </ul>
+              <details>
+                <summary>Details and contact</summary>
+                <ul>
+                  <li>A phone camera is enough to join.</li>
+                  <li>Includes a campus photo walk.</li>
+                  <li>Coordinator: Name, 98xxx xxxxx</li>
+                </ul>
+              </details>
+              <a href="register.html?event=photography" class="btn btn-ink">Register</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <h3>Fest Name 2027</h3>
+        <p>Your College Name, City, State</p>
+        <p>fest@yourcollege.edu</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://instagram.com/">Instagram</a>
+        <a href="https://wa.me/910000000000">WhatsApp</a>
+        <a href="register.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var buttons = document.querySelectorAll(".filter");
+    var cards = document.querySelectorAll(".event-card");
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var choice = btn.getAttribute("data-filter");
+        buttons.forEach(function (b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        cards.forEach(function (card) {
+          card.hidden = !(choice === "all" || card.getAttribute("data-category") === choice);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
