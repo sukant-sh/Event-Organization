@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 :root {
   --ink: #14123b;
   --ink-soft: #2a2766;
@@ -99,7 +98,7 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.1; }
   .nav { gap: 14px; font-size: 0.95rem; }
   .cd-box { min-width: 72px; padding: 10px 14px; }
   .cd-box strong { font-size: 1.7rem; }
-=======
+
 :root {
   --ink: #14123b;
   --ink-soft: #2a2766;
@@ -200,5 +199,5 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.1; }
   .nav { gap: 14px; font-size: 0.95rem; }
   .cd-box { min-width: 72px; padding: 10px 14px; }
   .cd-box strong { font-size: 1.7rem; }
->>>>>>> ef7221a9d4b69a8ab829f25a648ee7d753e28bfb
+}
 }

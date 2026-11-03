@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 :root {
   --ink: #14123b;
   --ink-soft: #2a2766;
@@ -182,7 +182,7 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.1; }
 @media (max-width: 860px) {
   .reg-layout { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
-=======
+
 :root {
   --ink: #14123b;
   --ink-soft: #2a2766;
@@ -366,5 +366,5 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.1; }
 @media (max-width: 860px) {
   .reg-layout { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
->>>>>>> ef7221a9d4b69a8ab829f25a648ee7d753e28bfb
+}
 }
